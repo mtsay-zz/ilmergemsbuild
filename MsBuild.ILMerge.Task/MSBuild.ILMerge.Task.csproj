@@ -59,7 +59,9 @@
     <None Include="content\ILMerge.props">
       <SubType>Designer</SubType>
     </None>
-    <None Include="MSBuild.ILMerge.Task.nuspec" />
+    <None Include="MSBuild.ILMerge.Task.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="package.cmd" />
   </ItemGroup>
   <ItemGroup>
