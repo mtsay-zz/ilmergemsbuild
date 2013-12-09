@@ -6,7 +6,7 @@
     <title>MSBuild ILMerge task</title>
     <authors>Alexander Nosenko</authors>
     <owners>Alexander Nosenko</owners>
-    <licenseUrl>http://research.microsoft.com/en-us/people/mbarnett/ilmerge.aspx</licenseUrl>
+    <licenseUrl>https://ilmergemsbuild.codeplex.com/license</licenseUrl>
     <projectUrl>https://ilmergemsbuild.codeplex.com/</projectUrl>
     <iconUrl>http://www.veryicon.com/icon/32/System/Refresh%20Cl/System%20Package.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
