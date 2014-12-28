@@ -772,6 +772,7 @@ namespace MSBuild.ILMerge
             return false;
         }
 
+        // ugly bit of blindly grouping around...
         private bool LookForILMergeInDirectory(string pathToTry, out string ilmergePath)
         {
             if (IsILMergeThere(pathToTry, out ilmergePath))
@@ -794,7 +795,7 @@ namespace MSBuild.ILMerge
                 return IsILMergeThere(ilmergeDir, out ilmergePath);
 
             var packagesDir = Path.Combine(pathToTry, "packages");
-            if (Directory.Exists("packagesDir"))
+            if (Directory.Exists(packagesDir))
                 return LookForILMergeInDirectory(packagesDir, out ilmergePath);
 
             return false;
@@ -803,9 +804,13 @@ namespace MSBuild.ILMerge
         private bool IsILMergeThere(string pathToTry, out string ilmergePath)
         {
             ilmergePath = Path.Combine(pathToTry, @"ILMerge.exe");
+            //Log.LogMessage("looking for " + ilmergePath);
+            if (File.Exists(ilmergePath))
+                return true;
 
-            ////Log.LogMessage("looking for " + ilmergePath);
-
+            // 1.0.3: see issue "Does not work with ILMerge 2.14.1208"
+            ilmergePath = Path.Combine(Path.Combine(pathToTry, "tools"), @"ILMerge.exe");
+            //Log.LogMessage("looking for " + ilmergePath);
             if (File.Exists(ilmergePath))
                 return true;
 

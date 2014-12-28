@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MSBuild.ILMerge.Task</id>
-    <version>1.0.2</version>
+    <version>1.0.3-rc2</version>
     <title>MSBuild ILMerge task</title>
     <authors>Alexander Nosenko</authors>
     <owners>Alexander Nosenko</owners>
@@ -21,8 +21,8 @@
 
       ILMerge.exe is not included into this package because its license prohibits redistribution. Referencing it as package dependency and loading it from its package location ensures that the latest ILMerge version is always used.
     </description>
-    <releaseNotes>After merge copies all content file marked as "Copy always" or "Copy if newer" to the target directory.</releaseNotes>
-    <copyright>Copyright 2013 Alexander Nosenko</copyright>
+    <releaseNotes>Updated to look for ILMerge also in the tools subfolder of its package. Support now ILMergeTransitive flag for transitive merge.</releaseNotes>
+    <copyright>Copyright 2013-2014 Alexander Nosenko</copyright>
     <tags>MSBuild ILMerge</tags>
     <dependencies>
       <dependency id="ilmerge" version="2.13.0307" />
