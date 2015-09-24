@@ -64,7 +64,7 @@
     <Message Text="Local content: @(LocalContentFiles)" Importance="low" />
 
     <!-- run ILMerge  -->
-    <MSBuild.ILMerge.Task TargetPlatform="net40"
+    <MSBuild.ILMerge.Task TargetPlatform="$(ILMergeTargetPlatform)"
         KeyFile="$(KeyOriginatorFile)"
         OutputFile="$(MergeOutputFile)"
         LibraryPath="$(ILMergeLibraryPath)"

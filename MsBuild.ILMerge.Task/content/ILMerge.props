@@ -24,5 +24,8 @@
 
     <!-- The assembly version if differs for the version of the main assembly -->
     <ILMergeAssemblyVersion></ILMergeAssemblyVersion>
+
+    <!-- The target platform of the output assembly -->
+    <ILMergeTargetPlatform>net40</ILMergeTargetPlatform>
   </PropertyGroup>
 </Project>
