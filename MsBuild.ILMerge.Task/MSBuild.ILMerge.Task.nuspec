@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>AeroFS.MSBuild.ILMerge.Task</id>
-    <version>1.0.3-rc3</version>
+    <version>1.0.3</version>
     <title>AeroFS-custom MSBuild ILMerge task</title>
     <authors>Alexander Nosenko</authors>
     <owners>Alexander Nosenko</owners>
