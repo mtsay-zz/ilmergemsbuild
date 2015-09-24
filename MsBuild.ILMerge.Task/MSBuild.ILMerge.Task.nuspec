@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>MSBuild.ILMerge.Task</id>
-    <version>1.0.3-rc2</version>
-    <title>MSBuild ILMerge task</title>
+    <id>AeroFS.MSBuild.ILMerge.Task</id>
+    <version>1.0.3-rc3</version>
+    <title>AeroFS-custom MSBuild ILMerge task</title>
     <authors>Alexander Nosenko</authors>
     <owners>Alexander Nosenko</owners>
     <licenseUrl>https://ilmergemsbuild.codeplex.com/license</licenseUrl>
@@ -31,8 +31,8 @@
   <files>
     <file src="Icon.png" target="" />
     <file src="License.txt" target="" />
-    <file src="build\MSBuild.ILMerge.Task.props" target="\build" />
-    <file src="build\MSBuild.ILMerge.Task.targets" target="\build" />
+    <file src="build\AeroFS.MSBuild.ILMerge.Task.props" target="\build" />
+    <file src="build\AeroFS.MSBuild.ILMerge.Task.targets" target="\build" />
     <file src="bin\release\MSBuild.ILMerge.Task.dll" target="\tools" />
     <!-- file src="bin\release\MSBuild.ILMerge.Task.pdb" target="\tools" / -->
     <file src="content\ILMerge.props" target="\content" />

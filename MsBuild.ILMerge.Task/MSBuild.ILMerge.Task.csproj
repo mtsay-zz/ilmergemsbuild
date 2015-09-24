@@ -54,8 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="build\MSBuild.ILMerge.Task.props" />
-    <None Include="build\MSBuild.ILMerge.Task.targets">
+    <None Include="build\AeroFS.MSBuild.ILMerge.Task.props" />
+    <None Include="build\AeroFS.MSBuild.ILMerge.Task.targets">
       <SubType>Designer</SubType>
     </None>
     <None Include="content\ILMerge.props">
